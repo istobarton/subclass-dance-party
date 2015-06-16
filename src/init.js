@@ -13,6 +13,7 @@ $(document).ready(function(){
       Math.random() * 1000
     );
 
+
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
   });
@@ -21,6 +22,10 @@ $(document).ready(function(){
     for (var i = 0; i < dancers.length; i++) {
       dancers[i].lineup();
     }
-
     });
+
+  // $("body").on("click", ".dancer", function(event){
+  //   console.log("iran");
+  //   this.mouseAction();
+  //   });
 });

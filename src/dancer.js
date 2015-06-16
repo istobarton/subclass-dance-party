@@ -3,6 +3,15 @@ var Dancer = function(top, left, timeBetweenSteps){
   this._timeBetweenSteps = timeBetweenSteps;
   this.step();
   this.setPosition(top, left);
+  var that = this;
+  this.$node.on("mouseenter", function(event){
+    console.log("iran");
+    that.$node.css({"border-image": "url('glitter.jpg')", "border-radius" : "10px"});
+  });
+  this.$node.on("mouseleave", function(event){
+    console.log("iran");
+    that.$node.css({"border-image": null, "border-radius" : null});
+  });
 };
 
 Dancer.prototype.step = function(){
@@ -24,4 +33,8 @@ Dancer.prototype.lineup = function(){
   this.$node.css({left: '250px'});
 };
 
-// http://api.jquery.com/css/
+// // http://api.jquery.com/css/
+// Dancer.prototype.mouseAction = function(){
+//   this.$node.css({color: "#f48223"});
+
+// }
