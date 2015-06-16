@@ -1,10 +1,10 @@
-describe("colorDancer", function() {
+describe("colorDancer", function(){
 
   var colorDancer;
   var timeBetweenSteps = 100;
   var clock;
 
-  beforeEach(function() {
+  beforeEach(function(){
     clock = sinon.useFakeTimers();
     colorDancer = new ColorDancer(10, 20, timeBetweenSteps);
   });

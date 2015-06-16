@@ -1,6 +1,6 @@
 var ColorDancer = function(top, left, timeBetweenSteps){
   Dancer.call(this, top, left, timeBetweenSteps);
-  var colorArray = ['pink', 'black', 'red', 'purple', 'orange', 'yellow']
+  var colorArray = ['#FF0066', '#FFCC66', '#9999FF', '#FF5050', '#FFCC00', '#66FFCC'];
   var colorPicker = Math.floor(Math.random() * colorArray.length-1)
   this.$node.css(
     {'border-color' : colorArray[colorPicker]})
