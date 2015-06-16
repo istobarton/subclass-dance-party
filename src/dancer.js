@@ -20,4 +20,8 @@ Dancer.prototype.setPosition = function(top, left){
   this.$node.css(styleSettings);
 };
 
+Dancer.prototype.lineup = function(){
+  this.$node.css({left: '250px'});
+};
+
 // http://api.jquery.com/css/

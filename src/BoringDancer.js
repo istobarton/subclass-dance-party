@@ -10,4 +10,3 @@ BoringDancer.prototype.step = function(){
   Dancer.prototype.step.call(this);
   this.$node.fadeToggle();
 };
-
